@@ -19,3 +19,24 @@ C:\Users\danil\Desktop\ddd\pogoda\obj\Debug\net6.0-windows\refint\pogoda.dll
 C:\Users\danil\Desktop\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.pdb
 C:\Users\danil\Desktop\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.genruntimeconfig.cache
 C:\Users\danil\Desktop\ddd\pogoda\obj\Debug\net6.0-windows\ref\pogoda.dll
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.exe
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.deps.json
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.runtimeconfig.json
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.dll
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.pdb
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.csproj.AssemblyReference.cache
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\MainWindow.g.cs
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda_MarkupCompile.cache
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda_MarkupCompile.lref
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\MainWindow.baml
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.g.resources
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.AssemblyInfoInputs.cache
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.AssemblyInfo.cs
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.csproj.CoreCompileInputs.cache
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.dll
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\refint\pogoda.dll
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.pdb
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.genruntimeconfig.cache
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\ref\pogoda.dll

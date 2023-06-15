@@ -11,5 +11,9 @@ namespace pogoda
             DataContext = new MainViewModel();
         }
 
+        private void TextBox_TextChanged()
+        {
+
+        }
     }
 }
