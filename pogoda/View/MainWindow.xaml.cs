@@ -1,4 +1,5 @@
 ﻿using Cloud.ViewModel;
+using pogoda.View;
 using System.Windows;
 
 namespace pogoda
@@ -11,9 +12,11 @@ namespace pogoda
             DataContext = new MainViewModel();
         }
 
-        private void TextBox_TextChanged()
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            SecondWindow sc = new SecondWindow();
+            sc.Show();
+            Close();
         }
     }
 }

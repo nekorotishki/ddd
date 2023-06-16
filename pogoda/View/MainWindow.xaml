@@ -22,9 +22,9 @@
             <RowDefinition Height="121*"></RowDefinition>
         </Grid.RowDefinitions>
         <Border Grid.Row="2" Grid.Column="1" Background="LightCoral" Padding="10" Panel.ZIndex="0"></Border>
-        <TextBlock Grid.Column="1" Grid.Row="2" Margin="0,0,0,106" Background="#B2F0F8FF"></TextBlock>
+        <TextBlock Text="Название программы" TextAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="0,0,0,106"></TextBlock>
         <Line Grid.Row="2" Grid.Column="1" Margin="17, 55, 16.5, 102" Stroke="Black" X1="0" X2="176" Panel.ZIndex="1"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Background="#B2F0F8FF" Margin="17, 67, 15, 66" TextChanged="TextBox_TextChanged"></TextBox>
-        <Button Grid.Column="1" Grid.Row="2" Margin="17, 116, 17, 15"></Button>
+        <TextBox Text="Ваш город" TextAlignment="Center" Grid.Row="2" Grid.Column="1" Background="#B2F0F8FF" Margin="17, 67, 15, 66"></TextBox>
+        <Button Content="Узнать погоду" Grid.Column="1" Grid.Row="2" Margin="17, 116, 17, 15" Click="Button_Click"></Button>
     </Grid>
 </Window>

@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pogoda.View"
         mc:Ignorable="d"
-        Title="SecondWindow" Height="450" Width="800">
+        Title="SecondWindow" Height="850" Width="1500" WindowStyle="None">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="438"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition Width="0.70*"></ColumnDefinition>
             <ColumnDefinition Width="0.10*"></ColumnDefinition>
@@ -16,7 +16,7 @@
             <ColumnDefinition Width="0.10*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="45"></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="3*"></RowDefinition>
             <RowDefinition Height="3*"></RowDefinition>
@@ -25,5 +25,21 @@
         <TextBlock Text="Выбранный город" Grid.Row="1"></TextBlock>
         <Button Content="Погода" Grid.Row="1" Grid.Column="1"></Button>
         <Frame Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="8"></Frame>
+        <Image Source="../Images/Sunny.png"  Grid.RowSpan="4" Margin="64,126,251,601" Width="123" Height="123"></Image>
+        <Image Source="../Images/Sunny.png" Grid.RowSpan="4" Margin="95,341,283,449" Width="60" Height="60"></Image>
+        <Image Source="../Images/Cloudy.png" Grid.RowSpan="4" Width="60" Height="60" Margin="95,502,283,302"></Image>
+        <Image Grid.RowSpan="4" Width="60" Height="60" Margin="95,657,283,133">
+            <Image.Source>
+                <BitmapImage UriSource="../Images/Rainy.png"></BitmapImage>
+            </Image.Source>
+        </Image>
+        <Line Grid.RowSpan="4" Y1="187.5" Y2="807.5" Stroke="Black" Margin="125,0,312,0"></Line>
+        <TextBlock Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="4" Margin="194,121,32,0"></TextBlock>
+        <TextBlock Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="4" Margin="167,341,47,0"></TextBlock>
+        <TextBlock Text="Переменная облачность. 20°&#xA;Ощущается как 19°" Margin="167,479,47,0" Grid.RowSpan="4"></TextBlock>
+        <TextBlock Text="Дождь. 19°&#xA;Ощущается как 15°" Grid.RowSpan="4" Margin="167,649,47,0"></TextBlock>
+        <TextBlock Text="16:00" Grid.RowSpan="4" Margin="11,341,343,0"></TextBlock>
+        <TextBlock Text="17:00" Grid.RowSpan="4" Margin="11,492,343,0"></TextBlock>
+        <TextBlock Text="18:00" Grid.RowSpan="4" Margin="11,649,343,0"></TextBlock>
     </Grid>
 </Window>
