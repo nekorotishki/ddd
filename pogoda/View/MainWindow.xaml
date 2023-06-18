@@ -3,10 +3,20 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:pogoda"
+        xmlns:local="clr-namespace:pogoda" 
+        xmlns:viewmodel="clr-namespace:Cloud.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="Text" Text="Test text" FontSize="24px" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel>
+            <TextBlock Text="Город:" FontSize="24" FontWeight="Bold"/>
+            <TextBlock Text="{Binding DataCollection.name}" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+            <TextBlock Text="Температура:" FontSize="24" FontWeight="Bold" Margin="0,20,0,0"/>
+            <TextBlock Text="{Binding DataCollection.main.temp}" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+            <TextBlock Text="Погода:" FontSize="24" FontWeight="Bold" Margin="0,20,0,0"/>
+            <TextBlock Text="{Binding DataCollection.weather[0].description}" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </StackPanel>
     </Grid>
 </Window>
