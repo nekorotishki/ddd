@@ -27,7 +27,8 @@ namespace pogoda.View
         public Func<double, string> YFormatter { get; set; }
         public SecondWindow()
         {
-            InitializeComponent(); SeriesCollection = new SeriesCollection
+            InitializeComponent();
+            SeriesCollection = new SeriesCollection
             {
                 new LineSeries
                 {
