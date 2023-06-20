@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Themes\Fonts\Jura-VariableFont_wght.ttf" />
+    <None Remove="Themes\Images\DayBG.jpg" />
+    <None Remove="Themes\Images\MorningBG.jpg" />
+    <None Remove="Themes\Images\NightBG.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Themes\Fonts\Jura-VariableFont_wght.ttf" />
+    <Resource Include="Themes\Images\DayBG.jpg" />
+    <Resource Include="Themes\Images\MorningBG.jpg" />
+    <Resource Include="Themes\Images\NightBG.jpg" />
+  </ItemGroup>
+
+</Project>

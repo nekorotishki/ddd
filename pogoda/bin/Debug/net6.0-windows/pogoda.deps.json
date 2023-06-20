@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "pogoda/1.0.0": {
         "dependencies": {
-          "LiveCharts.Wpf": "0.9.7"
+          "LiveCharts.Wpf": "0.9.7",
+          "Themes": "1.0.0"
         },
         "runtime": {
           "pogoda.dll": {}
@@ -32,6 +33,11 @@
             "fileVersion": "0.9.7.0"
           }
         }
+      },
+      "Themes/1.0.0": {
+        "runtime": {
+          "Themes.dll": {}
+        }
       }
     }
   },
@@ -54,6 +60,11 @@
       "sha512": "sha512-lv6YZoK0B4yWykMq5b9grZXtIbTj+OWu4sVN9GDpdgV6zffu64m4d5CW8KSjfSl9rB8VU649x1NZvhoU67hCDg==",
       "path": "livecharts.wpf/0.9.7",
       "hashPath": "livecharts.wpf.0.9.7.nupkg.sha512"
+    },
+    "Themes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

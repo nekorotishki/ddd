@@ -1,0 +1,17 @@
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes.csproj.AssemblyReference.cache
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes\Morning.baml
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes\Night.baml
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes_MarkupCompile.cache
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\bin\Debug\net6.0-windows\Themes.deps.json
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\bin\Debug\net6.0-windows\Themes.dll
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\bin\Debug\net6.0-windows\Themes.pdb
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes\Day.baml
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes.g.resources
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes.AssemblyInfoInputs.cache
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes.AssemblyInfo.cs
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes.csproj.CoreCompileInputs.cache
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes.dll
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\refint\Themes.dll
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\Themes.pdb
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\Themes\obj\Debug\net6.0-windows\ref\Themes.dll

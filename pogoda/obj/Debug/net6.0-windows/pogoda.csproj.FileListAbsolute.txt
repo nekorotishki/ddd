@@ -45,3 +45,32 @@ C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-wind
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\LiveCharts.dll
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.csproj.CopyComplete
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.csproj.AssemblyReference.cache
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\View\MainWindow.g.cs
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\View\SecondWindow.g.cs
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda_MarkupCompile.cache
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda_MarkupCompile.lref
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.dll
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\refint\pogoda.dll
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.pdb
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.exe
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.deps.json
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.runtimeconfig.json
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.dll
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\pogoda.pdb
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\LiveCharts.dll
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\Themes.dll
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\Themes.pdb
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\App.baml
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\View\MainWindow.baml
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\View\SecondWindow.baml
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.g.resources
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.AssemblyInfoInputs.cache
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.AssemblyInfo.cs
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.csproj.CoreCompileInputs.cache
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.csproj.CopyComplete
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.genruntimeconfig.cache
+C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\ref\pogoda.dll

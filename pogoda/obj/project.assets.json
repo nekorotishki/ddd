@@ -30,6 +30,19 @@
             "related": ".pdb;.XML"
           }
         }
+      },
+      "Themes/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Themes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Themes.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -73,31 +86,37 @@
         "livecharts.wpf.nuspec",
         "tools/install.ps1"
       ]
+    },
+    "Themes/1.0.0": {
+      "type": "project",
+      "path": "../Themes/Themes.csproj",
+      "msbuildProject": "../Themes/Themes.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "LiveCharts.Wpf >= 0.9.7"
+      "LiveCharts.Wpf >= 0.9.7",
+      "Themes >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\igosh\\.nuget\\packages\\": {},
+    "C:\\Users\\alexa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\igosh\\OneDrive\\Рабочий стол\\ddd\\pogoda\\pogoda.csproj",
+      "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\10 new\\ddd\\pogoda\\pogoda.csproj",
       "projectName": "pogoda",
-      "projectPath": "C:\\Users\\igosh\\OneDrive\\Рабочий стол\\ddd\\pogoda\\pogoda.csproj",
-      "packagesPath": "C:\\Users\\igosh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\igosh\\OneDrive\\Рабочий стол\\ddd\\pogoda\\obj\\",
+      "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\10 new\\ddd\\pogoda\\pogoda.csproj",
+      "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\10 new\\ddd\\pogoda\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\igosh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -106,13 +125,16 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\10 new\\ddd\\Themes\\Themes.csproj": {
+              "projectPath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\10 new\\ddd\\Themes\\Themes.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -149,7 +171,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   },

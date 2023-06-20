@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YOgh7RgzT7lTBx+Bny6wvIVLA+Hi2Olxfbj+CSUZL982oJtcXU1nAnRSSuHpn24oDV/+xFv8dHhA4v1YxYGbqg==",
+  "dgSpecHash": "ok7s5j/b88j1XLVrIF7kwqYjvk/lG0PVmrZy7QzlSm0spabdpBY/uQ/q4VBjKuu2ApOxzWlMgZFqq/NZYVrHxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\igosh\\OneDrive\\Рабочий стол\\ddd\\pogoda\\pogoda.csproj",
+  "projectFilePath": "C:\\Users\\alexa\\OneDrive\\Рабочий стол\\10 new\\ddd\\pogoda\\pogoda.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\igosh\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
-    "C:\\Users\\igosh\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
+    "C:\\Users\\alexa\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\alexa\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
   ],
   "logs": [
     {
