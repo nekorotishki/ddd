@@ -46,7 +46,6 @@ namespace pogoda.View
             YFormatter = value => value.ToString("N0");
             //modifying the series collection will animate and update the chart
             //modifying any series values will also animate and update the chart
-            SeriesCollection[0].Values.Add(5d);
             DataContext = this;
         }
     }
