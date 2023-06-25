@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\App.xaml
-21680163617
+4-1518109404
 
-7362119366
+92082600981
 196-393766116
-View\MainWindow.xaml;View\SecondWindow.xaml;
+View\MainWindow.xaml;View\PogodaPage.xaml;View\SecondWindow.xaml;View\ViewCard.xaml;
 
 False
 

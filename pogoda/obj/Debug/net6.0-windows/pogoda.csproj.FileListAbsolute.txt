@@ -45,3 +45,7 @@ C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-wind
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\LiveCharts.dll
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.csproj.CopyComplete
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\PogodaPage.g.cs
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\PogodaPage.baml
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\ViewCard.g.cs
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\ViewCard.baml

@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:pogoda"
         mc:Ignorable="d"
         Title="MainWindow" Height="430" Width="800" MinHeight="168" MinWidth="216" WindowStyle="None">
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/Day.png"/>
+    </Window.Background>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="297*"></ColumnDefinition>
@@ -21,10 +24,10 @@
             <RowDefinition Height="158"></RowDefinition>
             <RowDefinition Height="121*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Border Grid.Row="2" Grid.Column="1" Background="LightCoral" Padding="10" Panel.ZIndex="0"></Border>
-        <TextBlock Text="Название программы" TextAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="0,0,0,106"></TextBlock>
-        <Line Grid.Row="2" Grid.Column="1" Margin="17, 55, 16.5, 102" Stroke="Black" X1="0" X2="176" Panel.ZIndex="1"/>
+        <Border Grid.Row="2" Grid.Column="1" Background="#F8C5B4" Padding="10" Panel.ZIndex="0" Opacity="0.5"></Border>
+        <TextBlock Text="SunClouds" TextAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="0,0,0,106"></TextBlock>
+        <Line Grid.Row="2" Grid.Column="1" Margin="17, 55, 16.5, 102" Stroke="White" X1="0" X2="176" Panel.ZIndex="1"/>
         <TextBox Text="Ваш город" TextAlignment="Center" Grid.Row="2" Grid.Column="1" Background="#B2F0F8FF" Margin="17, 67, 15, 66"></TextBox>
-        <Button Content="Узнать погоду" Grid.Column="1" Grid.Row="2" Margin="17, 116, 17, 15" Click="Button_Click"></Button>
+        <Button Background="#87B6CA" Content="Узнать погоду" BorderBrush="#87B6CA" Grid.Column="1" Grid.Row="2" Margin="17, 116, 17, 15" Click="Button_Click"></Button>
     </Grid>
 </Window>

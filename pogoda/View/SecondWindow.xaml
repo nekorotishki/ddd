@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pogoda.View"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:pgb="https://github.com/Peoky/BusyIndicator"
         mc:Ignorable="d"
         Title="SecondWindow" Height="850" Width="1500" WindowStyle="SingleBorderWindow">
     <Window.Background>
@@ -22,36 +23,32 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="45"></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition Height="3*"></RowDefinition>
-            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button Content="Настройки" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4"></Button>
-        <TextBlock Text="Выбранный город" Grid.Row="1"></TextBlock>
-        <Button Content="Погода" Grid.Row="1" Grid.Column="1"></Button>
-        <Frame Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="8"></Frame>
-        <Image Grid.RowSpan="4" Margin="64,126,251,0" Width="123" Height="123" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Border Grid.RowSpan="5" Background="#F8C5B4" Panel.ZIndex="0" Opacity="0.5"></Border>
+        <Button Content="Настройки" BorderThickness="0,0,0,3" BorderBrush="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" Background="#00DDDDDD" Margin="33,0,53.5,0"></Button>
+        <Border Grid.Row="1" BorderBrush="#3D95B9" BorderThickness="0,0,0,3" Margin="22,0,11.5,0">
+            <TextBlock Text="Выбранный город"></TextBlock>
+        </Border>
+        <Button Content="Погода" BorderThickness="0,0,0,3" Grid.Row="1" Grid.Column="1" Background="#00DDDDDD" BorderBrush="White" Margin="40.5,0,33,0"></Button>
+        <Frame Margin="39" x:Name="fr" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="8" NavigationUIVisibility="Hidden"></Frame>
+        <Image Grid.RowSpan="5" Margin="64,126,251,0" Width="123" Height="123" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image.Source>
                 <BitmapImage UriSource="/Images/Sunny.png"></BitmapImage>
             </Image.Source>
         </Image>
-        <Image Source="/Images/Sunny.png" Grid.RowSpan="4" Margin="95,341,283,0" Width="60" Height="60" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
-        <Image Source="/Images/Cloudy.png" Grid.RowSpan="4" Width="60" Height="60" Margin="95,502,283,0" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
-        <Image Source="/Images/Rainy.png" Grid.RowSpan="4" Width="60" Height="60" Margin="95,657,283,0" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
-        <Line Grid.RowSpan="4" Y1="187.5" Y2="807.5" Stroke="Black" Margin="125,0,312,0"></Line>
-        <TextBlock Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="4" Margin="194,121,32,0"></TextBlock>
-        <TextBlock Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="4" Margin="167,341,47,0"></TextBlock>
-        <TextBlock Text="Переменная облачность. 20°&#xA;Ощущается как 19°" Margin="167,479,47,0" Grid.RowSpan="4"></TextBlock>
-        <TextBlock Text="Дождь. 19°&#xA;Ощущается как 15°" Grid.RowSpan="4" Margin="167,649,47,0"></TextBlock>
-        <TextBlock Text="16:00" Grid.RowSpan="4" Margin="11,341,343,0"></TextBlock>
-        <TextBlock Text="17:00" Grid.RowSpan="4" Margin="11,492,343,0"></TextBlock>
-        <TextBlock Text="18:00" Grid.RowSpan="4" Margin="11,649,343,0"></TextBlock>
-        <lvc:CartesianChart x:Name="Diagram" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="5" Series="{Binding SeriesCollection}">
-            <lvc:CartesianChart.AxisX>
-                <lvc:Axis Title="Часов" Labels="{Binding Labels}"></lvc:Axis>
-            </lvc:CartesianChart.AxisX>
-            <lvc:CartesianChart.AxisY>
-                <lvc:Axis Title="Градусов" LabelFormatter="{Binding YFormatter}"></lvc:Axis>
-            </lvc:CartesianChart.AxisY>
-        </lvc:CartesianChart>
+        <Image Source="/Images/Sunny.png" Grid.RowSpan="5" Margin="95,341,283,0" Width="60" Height="60" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+        <Image Source="/Images/Cloudy.png" Grid.RowSpan="5" Width="60" Height="60" Margin="95,502,283,0" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+        <Image Source="/Images/Rainy.png" Grid.RowSpan="5" Width="60" Height="60" Margin="95,657,283,0" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+        <Line Grid.RowSpan="5" Y1="187.5" Y2="807.5" Stroke="White" Margin="125,0,312,0"></Line>
+        <TextBlock Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="5" Margin="194,121,32,0"></TextBlock>
+        <TextBlock Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="5" Margin="167,341,47,0"></TextBlock>
+        <TextBlock Text="Переменная облачность. 20°&#xA;Ощущается как 19°" Margin="167,479,47,0" Grid.RowSpan="5"></TextBlock>
+        <TextBlock Text="Дождь. 19°&#xA;Ощущается как 15°" Grid.RowSpan="5" Margin="167,649,47,0"></TextBlock>
+        <TextBlock Text="16:00" TextAlignment="Right" Grid.RowSpan="5" Margin="11,341,343,0"></TextBlock>
+        <TextBlock Text="17:00" TextAlignment="Right" Grid.RowSpan="5" Margin="11,492,343,0"></TextBlock>
+        <TextBlock Text="18:00" TextAlignment="Right" Grid.RowSpan="5" Margin="11,649,343,0"></TextBlock>
     </Grid>
 </Window>

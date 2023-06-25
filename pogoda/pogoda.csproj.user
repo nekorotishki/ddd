@@ -7,12 +7,24 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\PogodaPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\SecondWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ViewCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="View\PogodaPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\SecondWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ViewCard.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
