@@ -63,7 +63,6 @@ C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6
 C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\LiveCharts.Wpf.dll
 C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\Themes.dll
 C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\bin\Debug\net6.0-windows\Themes.pdb
-C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\App.baml
 C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\View\MainWindow.baml
 C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\View\SecondWindow.baml
 C:\Users\alexa\OneDrive\Рабочий стол\10 new\ddd\pogoda\obj\Debug\net6.0-windows\pogoda.g.resources
