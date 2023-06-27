@@ -1,7 +1,9 @@
 ﻿using LiveCharts;
 using LiveCharts.Wpf;
+using pogoda.Model;
 using System;
 using System.Collections.Generic;
+using System.DirectoryServices.ActiveDirectory;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,9 +28,17 @@ namespace pogoda.View
         public string[] Labels { get; set; }
         public Func<double, string> YFormatter { get; set; }
         public List<ViewCard> viewCards = new List<ViewCard>();
-        public PogodaPage()
+        public PogodaPage(WeatherData wd)
         {
             InitializeComponent();
+            MainData.Text = $"{(int)wd.main.temp}°";
+            FeelData.Text = $"Ощущение:\n{(int)wd.main.feels_like}°";
+            MinData.Text = $"Мин.\n{(int)wd.main.temp_min}°";
+            MaxData.Text = $"Макс.\n{(int)wd.main.temp_max}°";
+            DavlData.Text = $"Давление \n{wd.main.pressure} мм рт. ст.";
+            VlagData.Text = $"Влажность:\n{wd.main.humidity}%";
+            WindSData.Text = $"Скорость ветра:\n{(int)wd.wind.speed}м/c";
+            WindDData.Text = $"Направление в °\n{wd.wind.deg}";
             viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
             viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
             viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
@@ -66,6 +76,11 @@ namespace pogoda.View
             //modifying the series collection will animate and update the chart
             //modifying any series values will also animate and update the chart
             DataContext = this;
+            //foreach (HourlyWeather hourlyWeather in wd.hourly)
+            //{
+            //    DateTime forecastTime = DateTimeOffset.FromUnixTimeSeconds(hourlyWeather.dt).DateTime;
+            //    double temperature = hourlyWeather.temp;
+            //}
         }
     }
 }

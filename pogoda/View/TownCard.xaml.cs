@@ -1,4 +1,5 @@
 ﻿using pogoda.Model;
+using pogoda.ViewModel.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,14 +23,32 @@ namespace pogoda.View
     public partial class TownCard : UserControl
     {
         public string TownName;
-        public Coord Coordinates;
-        public TownCard(string town, Coord coords)
+        public double Lat;
+        public double Lon;
+        public SettingsPage settingsPage;
+        Town TownSource;
+        public TownCard(string town, double lat, double lon, SettingsPage sp, Town townSource)
         {
             InitializeComponent();
-            Coordinates = coords;
+            settingsPage = sp;
+            Lon = lon;
+            Lat = lat;
             TownName = town;
             Town.Text = town;
-            Coords.Text = coords.lat.ToString();
+            TownSource = townSource;
+            Coords.Text = $"{lat} с.ш. {lon} в.д";
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            settingsPage.DeleteCity(TownSource);
+        }
+
+        private void Element_Click(object sender, RoutedEventArgs e)
+        {
+            ApiHelper.city = Town.Text;
+            settingsPage.secondWindow.ConstructorTask(false);
+            settingsPage.secondWindow.fr.Content = settingsPage.secondWindow.p;
         }
     }
 }

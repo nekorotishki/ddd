@@ -14,7 +14,7 @@ namespace pogoda
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SecondWindow sc = new SecondWindow(town.Text);
+            SecondWindow sc = new SecondWindow();
             sc.Show();
             Close();
         }

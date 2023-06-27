@@ -28,22 +28,18 @@
             <RowDefinition Height="5*"></RowDefinition>
         </Grid.RowDefinitions>
         <Border Grid.RowSpan="5" Background="#F8C5B4" Panel.ZIndex="0" Opacity="0.5"></Border>
-        <Button Content="Настройки" BorderThickness="0,0,0,3" BorderBrush="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" Background="#00DDDDDD" Margin="33,0,53.5,0" Click="Button_Click"></Button>
+        <Button Content="Настройки" Click="Button_Click_1" BorderThickness="0,0,0,3" BorderBrush="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" Background="#00DDDDDD" Margin="33,0,53.5,0"></Button>
         <Border Grid.Row="1" BorderBrush="#3D95B9" BorderThickness="0,0,0,3" Margin="22,0,11.5,0">
-            <TextBlock Text="Выбранный город"></TextBlock>
+            <TextBlock x:Name="SelectedCity" Text="Выбранный город"></TextBlock>
         </Border>
-        <Button Content="Погода" BorderThickness="0,0,0,3" Grid.Row="1" Grid.Column="1" Background="#00DDDDDD" BorderBrush="White" Margin="40.5,0,33,0" Click="Button_Click_1"></Button>
+        <Button Content="Погода" BorderThickness="0,0,0,3" Grid.Row="1" Grid.Column="1" Background="#00DDDDDD" BorderBrush="White" Margin="40.5,0,33,0" Click="Button_Click"></Button>
         <Frame Margin="39" x:Name="fr" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="8" NavigationUIVisibility="Hidden"></Frame>
-        <Image Grid.RowSpan="5" Margin="64,126,251,0" Width="123" Height="123" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Image.Source>
-                <BitmapImage UriSource="/Images/Sunny.png"></BitmapImage>
-            </Image.Source>
-        </Image>
+        <Image x:Name="firstImage" Source="/Images/Sunny.png" Grid.RowSpan="5" Margin="64,126,251,0" Width="123" Height="123" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
         <Image Source="/Images/Sunny.png" Grid.RowSpan="5" Margin="95,341,283,0" Width="60" Height="60" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
         <Image Source="/Images/Cloudy.png" Grid.RowSpan="5" Width="60" Height="60" Margin="95,502,283,0" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
         <Image Source="/Images/Rainy.png" Grid.RowSpan="5" Width="60" Height="60" Margin="95,657,283,0" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
         <Line Grid.RowSpan="5" Y1="187.5" Y2="807.5" Stroke="White" Margin="125,0,312,0"></Line>
-        <TextBlock Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="5" Margin="194,121,32,0"></TextBlock>
+        <TextBlock x:Name="NowData"  Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="5" Margin="194,121,32,0"></TextBlock>
         <TextBlock Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="5" Margin="167,341,47,0"></TextBlock>
         <TextBlock Text="Переменная облачность. 20°&#xA;Ощущается как 19°" Margin="167,479,47,0" Grid.RowSpan="5"></TextBlock>
         <TextBlock Text="Дождь. 19°&#xA;Ощущается как 15°" Grid.RowSpan="5" Margin="167,649,47,0"></TextBlock>

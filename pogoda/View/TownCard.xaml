@@ -16,8 +16,9 @@
             <RowDefinition Height="20"></RowDefinition>
             <RowDefinition Height="45"></RowDefinition>
         </Grid.RowDefinitions>
+        <Button Click="Element_Click" Margin="5" Grid.ColumnSpan="2" Grid.RowSpan="3" Panel.ZIndex="1" Opacity="0"></Button>
         <TextBlock Margin="5,5,5,0" Background="#3D95B9" Foreground="White" Text="Город" TextAlignment="Center" x:Name="Town" Grid.RowSpan="2" Grid.ColumnSpan="2"></TextBlock>
-        <Button Margin="0" Grid.Column="1" Height="15" Width="15" x:Name="Close" Content="x" Foreground="White" BorderThickness="0" Background="#00DDDDDD" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Button>
+        <Button Margin="0" Grid.Column="1" Height="15" Width="15" x:Name="Close" Content="x" Foreground="White" BorderThickness="0" Background="#00DDDDDD" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Click="Close_Click" Panel.ZIndex="2"></Button>
         <TextBlock Margin="5,0,5,5" x:Name="Coords" Grid.Row="2" Grid.ColumnSpan="2" Background="#3D95B9" Opacity="0.5" Foreground="White" TextAlignment="Center"  Text="55°45′07″ с.ш. 37°36′56″ в.д"></TextBlock>
     </Grid>
 </UserControl>

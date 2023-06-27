@@ -9,13 +9,13 @@ namespace pogoda.ViewModel.Helpers
 {
     class ApiHelper
     {
-        static string city = "Moscow";
+        public static string city = "Moscow";
 
         public static async Task<WeatherData> GetWeatherDataAsync()
         {
             using (HttpClient client = new HttpClient())
             {
-                string apiUrl = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid=dc02e68c8a7e8f4425e085ea7dadb233&lang=ru&units=metric";
+                string apiUrl = $"https://api.openweathermap.org/data/2.5/weather?q={city}&exclude=current,minutely,hourly&appid=dc02e68c8a7e8f4425e085ea7dadb233&lang=ru&units=metric";
                 HttpResponseMessage response = await client.GetAsync(apiUrl);
                 if (response.IsSuccessStatusCode)
                 {

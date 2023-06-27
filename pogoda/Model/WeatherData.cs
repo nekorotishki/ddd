@@ -10,11 +10,6 @@ namespace pogoda.Model
     {
         public double lon { get; set; }
         public double lat { get; set; }
-        public Coord(double lon, double lat)
-        {
-            this.lon = lon;
-            this.lat = lat;
-        }
     }
 
     public class Weather
@@ -58,6 +53,14 @@ namespace pogoda.Model
         public long sunset { get; set; }
     }
 
+    public class HourlyWeather
+    {
+        public long dt { get; set; }
+        public double temp { get; set; }
+        public double feels_like { get; set; }
+        public int pressure { get; set; }
+    }
+
     public class WeatherData
     {
         public Coord coord { get; set; }
@@ -73,5 +76,6 @@ namespace pogoda.Model
         public int id { get; set; }
         public string name { get; set; }
         public int cod { get; set; }
+        public List<HourlyWeather> hourly { get; set; }
     }
 }

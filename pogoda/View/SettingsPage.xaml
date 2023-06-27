@@ -29,7 +29,7 @@
         <TextBlock Foreground="White" TextAlignment="Center" Text="Избранные города: " Grid.ColumnSpan="4" Grid.Row="2"></TextBlock>
         <TextBlock Foreground="White" TextAlignment="Center" Text="Исчисление градусов:" Grid.ColumnSpan="4" Grid.Row="5"></TextBlock>
         <TextBox Grid.Row="1" Grid.ColumnSpan="4" Margin="15" Background="#87B6CA" BorderThickness="0"></TextBox>
-        <TextBox Grid.Row="4" Grid.ColumnSpan="3" Margin="15,15,0,0"></TextBox>
+        <TextBox x:Name="CityInput" Background="#87B6CA" BorderThickness="0" Grid.Row="4" Grid.ColumnSpan="3" Margin="15,15,0,15"></TextBox>
         <Border Margin="15" Grid.Row="3" Opacity="0.8" Background="#F8C5B4" Grid.ColumnSpan="4" >
             <WrapPanel x:Name="wp">
             </WrapPanel>
@@ -40,7 +40,7 @@
         <Border Grid.Row="6" Grid.Column="2" Background="#3D95B9" Opacity="0.8" Margin="10,0,0,0">
             <RadioButton VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content="Фаренгейт F" Foreground="White" BorderBrush="White" Background="Transparent"></RadioButton>
         </Border>
-        <Button Content="Добавить город" Grid.Column="3" Grid.Row="4" Margin="0,15,15,0" Background="#87B6CA" BorderThickness="0"></Button>
+        <Button Content="Добавить город" Grid.Column="3" Grid.Row="4" Margin="0,15,15,0" Background="#87B6CA" BorderThickness="0" Height="26" Grid.RowSpan="2" VerticalAlignment="Top" Click="Button_Click"></Button>
         <Button Content="Сохранить" Grid.ColumnSpan="4" Grid.Row="7" Margin="15" Background="#87B6CA" BorderThickness="0"></Button>
     </Grid>
 </Page>

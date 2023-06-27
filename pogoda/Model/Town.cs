@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pogoda.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,11 +12,18 @@ namespace pogoda.Model
         public double Lon { get; set; }
         public double Lat { get; set; }
         public string Name { get; set; }
+        public Town(TownCard tc)
+        {
+            Lon = tc.Lon;
+            Lat = tc.Lat;
+            Name = tc.TownName;
+        }
         public Town(double lon, double lat, string name)
         {
             Lon = lon;
             Lat = lat;
             Name = name;
         }
+        public Town() { }
     }
 }
