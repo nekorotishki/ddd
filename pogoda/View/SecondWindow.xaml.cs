@@ -22,10 +22,23 @@ namespace pogoda.View
     /// </summary>
     public partial class SecondWindow : Window
     {
-        public SecondWindow()
+        PogodaPage p;
+        SettingsPage s;
+        public SecondWindow(string town)
         {
             InitializeComponent();
-            PogodaPage p = new PogodaPage();
+            p = new PogodaPage();
+            s = new SettingsPage();
+            fr.Content = p;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            fr.Content = s;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
             fr.Content = p;
         }
     }

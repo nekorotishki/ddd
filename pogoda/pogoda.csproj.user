@@ -13,6 +13,12 @@
     <Compile Update="View\SecondWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\SettingsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\TownCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\ViewCard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +28,12 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\SecondWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TownCard.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\ViewCard.xaml">

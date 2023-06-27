@@ -9,15 +9,19 @@
              d:DesignHeight="170" d:DesignWidth="110">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="55"></ColumnDefinition>
+            <ColumnDefinition Width="55"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="70*"></RowDefinition>
-            <RowDefinition Height="50*"></RowDefinition>
-            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
-        <Border Grid.ColumnSpan="2" Grid.RowSpan="3" Background="#3D95B9" Opacity="0.5"></Border>
+        <Border Grid.ColumnSpan="2" Grid.RowSpan="3" Background="#3D95B9" Opacity="0.5">
+            <Border.Effect>
+                <DropShadowEffect ShadowDepth="3" Direction="270" Opacity="0.5" />
+            </Border.Effect>
+        </Border>
         <Image x:Name="Img" Grid.ColumnSpan="2" Height="60" Width="60" Source="/Images/Sunny.png"></Image>
         <TextBlock x:Name="WeatherBl" Text="16:00&#xA;21°" TextAlignment="Center" Grid.Row="1" Grid.ColumnSpan="2" Background="#3D95B9"></TextBlock>
         <TextBlock x:Name="VlagBl" Text="Влаж.&#xA;21°" TextAlignment="Center" Grid.Row="2"></TextBlock>

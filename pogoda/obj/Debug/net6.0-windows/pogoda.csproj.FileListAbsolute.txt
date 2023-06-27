@@ -49,3 +49,8 @@ C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-wind
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\PogodaPage.baml
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\ViewCard.g.cs
 C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\ViewCard.baml
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\SettingsPage.g.cs
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\SettingsPage.baml
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\TownCard.g.cs
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\obj\Debug\net6.0-windows\View\TownCard.baml
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\pogoda\bin\Debug\net6.0-windows\Newtonsoft.Json.dll

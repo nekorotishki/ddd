@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "YOgh7RgzT7lTBx+Bny6wvIVLA+Hi2Olxfbj+CSUZL982oJtcXU1nAnRSSuHpn24oDV/+xFv8dHhA4v1YxYGbqg==",
+  "dgSpecHash": "nS1lRtYEJZ+fLE4rg5GLhgNhN4mkFJ+RC+6varT4jzidj8fVbMAnPKjQGDBh+nohf6YAwtF6ryasCj67D7H7Yg==",
   "success": true,
   "projectFilePath": "C:\\Users\\igosh\\OneDrive\\Рабочий стол\\ddd\\pogoda\\pogoda.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\igosh\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
-    "C:\\Users\\igosh\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512"
+    "C:\\Users\\igosh\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
+    "C:\\Users\\igosh\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": [
     {

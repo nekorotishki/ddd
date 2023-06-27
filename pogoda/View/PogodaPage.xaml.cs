@@ -32,6 +32,20 @@ namespace pogoda.View
             viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
             viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
             viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
+            viewCards.Add(new ViewCard("/Images/Sunny.png", 15, 14, 17, "16:00"));//Тут типо карточки сюда засовываем
             lv.ItemsSource = viewCards;
             SeriesCollection = new SeriesCollection
             {

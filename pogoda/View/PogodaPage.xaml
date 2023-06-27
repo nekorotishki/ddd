@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*"></RowDefinition>
-            <RowDefinition Height="0.6*"></RowDefinition>
+            <RowDefinition Height="0.8*"></RowDefinition>
             <RowDefinition Height="0.15*"></RowDefinition>
             <RowDefinition Height="0.8*"></RowDefinition>
         </Grid.RowDefinitions>
@@ -55,9 +55,9 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Button Content="Температура" HorizontalAlignment="Stretch" Grid.Column="0" Margin="10" Background="#3D95B9"></Button>
-                <Button Content="Ощущается как" HorizontalAlignment="Stretch" Grid.Column="1" Margin="10" Background="#87B6CA"></Button>
-                <Button Content="Давление" HorizontalAlignment="Stretch" Grid.Column="2" Margin="10" Background="#87B6CA"></Button>
+                <Button BorderThickness="0" Content="Температура" HorizontalAlignment="Stretch" Grid.Column="0" Margin="10" Background="#3D95B9"></Button>
+                <Button BorderThickness="0" Content="Ощущается как" HorizontalAlignment="Stretch" Grid.Column="1" Margin="10" Background="#87B6CA"></Button>
+                <Button BorderThickness="0" Content="Давление" HorizontalAlignment="Stretch" Grid.Column="2" Margin="10" Background="#87B6CA"></Button>
             </Grid>
         </Border>
         <lvc:CartesianChart Opacity="0.8" x:Name="Diagram" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="5" Background="#F8C5B4" Series="{Binding SeriesCollection}">

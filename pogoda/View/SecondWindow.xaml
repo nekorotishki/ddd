@@ -7,7 +7,7 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:pgb="https://github.com/Peoky/BusyIndicator"
         mc:Ignorable="d"
-        Title="SecondWindow" Height="850" Width="1500" WindowStyle="SingleBorderWindow">
+        Title="SecondWindow" Height="850" Width="1500" WindowStyle="SingleBorderWindow" Icon="/Images/Icon.png">
     <Window.Background>
         <ImageBrush ImageSource="/Images/MorningEvening.png"/>
     </Window.Background>
@@ -28,11 +28,11 @@
             <RowDefinition Height="5*"></RowDefinition>
         </Grid.RowDefinitions>
         <Border Grid.RowSpan="5" Background="#F8C5B4" Panel.ZIndex="0" Opacity="0.5"></Border>
-        <Button Content="Настройки" BorderThickness="0,0,0,3" BorderBrush="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" Background="#00DDDDDD" Margin="33,0,53.5,0"></Button>
+        <Button Content="Настройки" BorderThickness="0,0,0,3" BorderBrush="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" Background="#00DDDDDD" Margin="33,0,53.5,0" Click="Button_Click"></Button>
         <Border Grid.Row="1" BorderBrush="#3D95B9" BorderThickness="0,0,0,3" Margin="22,0,11.5,0">
             <TextBlock Text="Выбранный город"></TextBlock>
         </Border>
-        <Button Content="Погода" BorderThickness="0,0,0,3" Grid.Row="1" Grid.Column="1" Background="#00DDDDDD" BorderBrush="White" Margin="40.5,0,33,0"></Button>
+        <Button Content="Погода" BorderThickness="0,0,0,3" Grid.Row="1" Grid.Column="1" Background="#00DDDDDD" BorderBrush="White" Margin="40.5,0,33,0" Click="Button_Click_1"></Button>
         <Frame Margin="39" x:Name="fr" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="8" NavigationUIVisibility="Hidden"></Frame>
         <Image Grid.RowSpan="5" Margin="64,126,251,0" Width="123" Height="123" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Image.Source>
