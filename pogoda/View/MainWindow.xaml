@@ -5,10 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pogoda"
         mc:Ignorable="d"
-        Title="MainWindow" Height="430" Width="800" MinHeight="168" MinWidth="216" WindowStyle="None" Icon="/Images/Icon.png">
-    <Window.Background>
-        <ImageBrush ImageSource="/Images/Day.png"/>
-    </Window.Background>
+        Title="MainWindow" Height="430" Width="800" MinHeight="168" MinWidth="216" WindowStyle="None" Icon="/Images/Icon.png"
+        Style="{DynamicResource WindowStyle}">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="297*"></ColumnDefinition>
@@ -24,10 +22,13 @@
             <RowDefinition Height="158"></RowDefinition>
             <RowDefinition Height="121*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Border Grid.Row="2" Grid.Column="1" Background="#F8C5B4" Padding="10" Panel.ZIndex="0" Opacity="0.5"></Border>
-        <TextBlock Text="SunClouds" TextAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="0,0,0,106"></TextBlock>
+        <Button Style="{DynamicResource ButtonStyle}" x:Name="close" Content="x" Background="{x:Null}" Grid.Row="0" Grid.Column="5" Click="close_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" x:Name="max" Content="0" Background="{x:Null}" Grid.Row="0" Grid.Column="4" Click="max_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" x:Name="min" Content="-" Background="{x:Null}" Grid.Row="0" Grid.Column="3" Click="min_Click"/>
+        <Border Grid.Row="2" Grid.Column="1" Style="{DynamicResource BorderStyle}" Padding="10" Panel.ZIndex="0"></Border>
+        <TextBlock Style="{DynamicResource TextBlockStyle}" FontSize="25" FontWeight="Bold" Text="SunClouds" TextAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Margin="0,0,0,106"></TextBlock>
         <Line Grid.Row="2" Grid.Column="1" Margin="17, 55, 16.5, 102" Stroke="White" X1="0" X2="176" Panel.ZIndex="1"/>
-        <TextBox x:Name="town" Text="Ваш город" TextAlignment="Center" Grid.Row="2" Grid.Column="1" Background="#B2F0F8FF" Margin="17, 67, 15, 66"></TextBox>
-        <Button Background="#87B6CA" Content="Узнать погоду" BorderBrush="#87B6CA" Grid.Column="1" Grid.Row="2" Margin="17, 116, 17, 15" Click="Button_Click"></Button>
+        <TextBox Style="{DynamicResource TextBoxStyle}" x:Name="town" Text="Ваш город" TextAlignment="Center" Grid.Row="2" Grid.Column="1" Margin="17, 67, 15, 66"></TextBox>
+        <Button Style="{DynamicResource ButtonStyle}" Content="Узнать погоду" Grid.Column="1" Grid.Row="2" Margin="17, 116, 17, 15" Click="Button_Click"></Button>
     </Grid>
 </Window>

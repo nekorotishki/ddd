@@ -19,6 +19,15 @@ namespace pogoda.View
         public SettingsPage(SecondWindow sc)
         {
             InitializeComponent();
+            MainTownTextBox.Text = App.Town.Name;
+            if (App.Presentation == "fahrenheit")
+            {
+                FRadio.IsChecked = true;
+            }
+            else
+            {
+                CRadio.IsChecked = true;
+            }
             secondWindow = sc;
             towns = FromJson<List<Town>>("..\\..\\..\\Json\\towns.json");
             townCards = new List<TownCard>();
@@ -26,8 +35,6 @@ namespace pogoda.View
             {
                 towns = new List<Town>();
             }
-            Town town = new Town(37.22, 35.02, "Владивосток");
-            towns.Add(town);
             Clear();
         }
         private async Task LoadWeatherDataAsync()
@@ -70,6 +77,24 @@ namespace pogoda.View
         private async Task ConstructorTask()
         {
             await LoadWeatherDataAsync();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Town town = new Town(32, 32.5, MainTownTextBox.Text);
+            string presentation;
+            if ((bool)FRadio.IsChecked)
+            {
+                presentation = "fahrenheit";
+            }
+            else
+            {
+                presentation = "celcius";
+            }
+            App.Town = town;
+            App.Presentation = presentation;
+            Settings settings = new Settings(town, presentation);
+            ToJson<Settings>(settings, "../../../Json/settings.json");
         }
     }
 }

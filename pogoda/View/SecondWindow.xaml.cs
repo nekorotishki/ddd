@@ -88,18 +88,61 @@ namespace pogoda.View
         }
         public async Task ConstructorTask(bool IsInitialize)
         {
-            await LoadWeatherDataAsync();
-            if (IsInitialize) { InitializeComponent(); }
-            string name = dataCollection.weather[0].description;
-            name = char.ToUpper(name[0]) + name.Substring(1);
-            NowData.Text = $"{name}. {(int)dataCollection.main.temp}°\nОщущается как {(int)dataCollection.main.feels_like}°";
-            SelectedCity.Text = dataCollection.name;
-            bitmap = firstImage;
-            CaseWeather(name);
-            s = new SettingsPage(this);
-            p = new PogodaPage(dataCollection);
-            fr.Content = p;
+            try
+            {
+                int celc = 0;
+                double coeff = 1.0;
+                string far = "";
+                if (App.Presentation == "fahrenheit")
+                {
+                    celc = 32;
+                    coeff = 1.8;
+                    far = "F";
+                }
+                await LoadWeatherDataAsync();
+                if (IsInitialize) { InitializeComponent(); }
+                string name = dataCollection.weather[0].description;
+                name = char.ToUpper(name[0]) + name.Substring(1);
+                NowData.Text = $"{name}. {(int)dataCollection.main.temp * coeff + celc}{far}°\nОщущается как {(int)dataCollection.main.feels_like * coeff + celc}{far}°";
+                SelectedCity.Text = dataCollection.name;
+                bitmap = firstImage;
+                CaseWeather(name);
+                s = new SettingsPage(this);
+                p = new PogodaPage(dataCollection);
+                fr.Content = p;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Введенный город не найден или же у вас выключен интернет. Попробуйте снова.");
+                Close();
+            }
         }
+        private void close_Click(object sender, RoutedEventArgs e) ///закрыть окна
+        {
+            Application app = Application.Current;
+            app.Shutdown();
+        }
+
+        bool MainWindowState = false; ///развернуть окно
+        private void max_Click(object sender, RoutedEventArgs e)
+        {
+            if (!MainWindowState)
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Maximized;
+                MainWindowState = true;
+            }
+            else
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Normal;
+                MainWindowState = false;
+            }
+        }
+
+        private void min_Click(object sender, RoutedEventArgs e) ///свернуть окно
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
+
         private async Task LoadWeatherDataAsync()
         {
             dataCollection = await ApiHelper.GetWeatherDataAsync();

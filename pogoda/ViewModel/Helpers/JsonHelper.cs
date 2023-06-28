@@ -17,15 +17,11 @@ namespace pogoda.ViewModel.Helpers
         }
         public static T FromJson<T>(string path)
         {
-            try
-            {
-                var file = File.ReadAllText(path);
-                return JsonConvert.DeserializeObject<T>(file);
-            }
-            catch
-            {
-                return default(T);
-            }
+            
+            
+            var file = File.ReadAllText(path);
+            return JsonConvert.DeserializeObject<T>(file);
+            
         }
     }
 }

@@ -30,21 +30,24 @@
                     <ColumnDefinition Width="134*"></ColumnDefinition>
                     <ColumnDefinition Width="110*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock x:Name="MainData" Text="21°" Foreground="#3D95B9" TextAlignment="Center" Grid.Column="0"></TextBlock>
+                <TextBlock FontSize="44" x:Name="MainData" Text="21°" Foreground="#3D95B9" TextAlignment="Center" Grid.Column="0"></TextBlock>
                 <Line Grid.Column="1" Stroke="White" Width="2" VerticalAlignment="Stretch" Margin="0,15" Y1="0" Y2="13041"></Line>
-                <TextBlock x:Name="FeelData" TextAlignment="Center" Foreground="White" Text="Ощущение: &#xA;21°" Grid.Column="2"></TextBlock>
-                <TextBlock x:Name="MinData" TextAlignment="Center" Foreground="White" Text="Мин. &#xA;21°" Grid.Column="3"></TextBlock>
-                <TextBlock x:Name="MaxData" TextAlignment="Center" Foreground="White" Text="Макс. &#xA;21°" Grid.Column="4"></TextBlock>
-                <TextBlock x:Name="DavlData" TextAlignment="Center" Foreground="White" Text="Давление &#xA;21 мм рт. ст." Grid.Column="5"></TextBlock>
-                <TextBlock x:Name="VlagData" TextAlignment="Center" Foreground="White" Text="Влажность: &#xA;20%" Grid.Column="6"></TextBlock>
-                <TextBlock x:Name="WindSData" TextAlignment="Center" Foreground="White" Text="Ветер м/c: &#xA;7м/c" Grid.Column="7"></TextBlock>
-                <TextBlock x:Name="WindDData" TextAlignment="Center" Foreground="White" Text="Ветер °: &#xA;290" Grid.Column="8"></TextBlock>
+                <TextBlock FontSize="17" Style="{DynamicResource TextBlockStyle}" x:Name="FeelData" TextAlignment="Center" Foreground="White" Text="Ощущение: &#xA;21°" Grid.Column="2"></TextBlock>
+                <TextBlock FontSize="17" Style="{DynamicResource TextBlockStyle}" x:Name="MinData" TextAlignment="Center" Foreground="White" Text="Мин. &#xA;21°" Grid.Column="3"></TextBlock>
+                <TextBlock FontSize="17" Style="{DynamicResource TextBlockStyle}" x:Name="MaxData" TextAlignment="Center" Foreground="White" Text="Макс. &#xA;21°" Grid.Column="4"></TextBlock>
+                <TextBlock FontSize="17" Style="{DynamicResource TextBlockStyle}" x:Name="DavlData" TextAlignment="Center" Foreground="White" Text="Давление &#xA;21 мм рт. ст." Grid.Column="5"></TextBlock>
+                <TextBlock FontSize="17" Style="{DynamicResource TextBlockStyle}" x:Name="VlagData" TextAlignment="Center" Foreground="White" Text="Влажность: &#xA;20%" Grid.Column="6"></TextBlock>
+                <TextBlock FontSize="17" Style="{DynamicResource TextBlockStyle}" x:Name="WindSData" TextAlignment="Center" Foreground="White" Text="Ветер м/c: &#xA;7м/c" Grid.Column="7"></TextBlock>
+                <TextBlock FontSize="17" Style="{DynamicResource TextBlockStyle}" x:Name="WindDData" TextAlignment="Center" Foreground="White" Text="Ветер °: &#xA;290" Grid.Column="8"></TextBlock>
             </Grid>
             <Border.Effect>
                 <DropShadowEffect ShadowDepth="3" Direction="270" Opacity="0.5" />
             </Border.Effect>
         </Border>
-        <ListView Opacity="0.8" Background="#F8C5B4" Margin="0,20" x:Name="lv" Grid.Row="1" ScrollViewer.CanContentScroll="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+        <ListView Style="{DynamicResource ListViewStyle}" Opacity="0.8" Background="#F8C5B4" Margin="0,20" x:Name="lv" Grid.Row="1" ScrollViewer.CanContentScroll="True" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Visible">
+            <ListView.Resources>
+                <Style TargetType="ScrollBar" BasedOn="{StaticResource CustomScrollBarStyle}" />
+            </ListView.Resources>
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Horizontal"/>
@@ -54,7 +57,7 @@
                 <DropShadowEffect ShadowDepth="3" Direction="270" Opacity="0.5" />
             </ListView.Effect>
         </ListView>
-        <Border Opacity="0.8" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1" Background="#F8C5B4">
+        <Border Style="{DynamicResource BorderStyle}" Opacity="0.8" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1" Background="#F8C5B4">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>

@@ -31,10 +31,19 @@ namespace pogoda.View
         public PogodaPage(WeatherData wd)
         {
             InitializeComponent();
-            MainData.Text = $"{(int)wd.main.temp}°";
-            FeelData.Text = $"Ощущение:\n{(int)wd.main.feels_like}°";
-            MinData.Text = $"Мин.\n{(int)wd.main.temp_min}°";
-            MaxData.Text = $"Макс.\n{(int)wd.main.temp_max}°";
+            int celc = 0;
+            double coeff = 1.0;
+            string far = "";
+            if (App.Presentation == "fahrenheit")
+            {
+                celc = 32;
+                coeff = 1.8;
+                far = "F";
+            }
+            MainData.Text = $"{(int)wd.main.temp * coeff + celc}{far}°";
+            FeelData.Text = $"Ощущение:\n{(int)wd.main.feels_like * coeff + celc}{far}°";
+            MinData.Text = $"Мин.\n{(int)wd.main.temp_min * coeff + celc}{far}°";
+            MaxData.Text = $"Макс.\n{(int)wd.main.temp_max * coeff + celc}{far}°";
             DavlData.Text = $"Давление \n{wd.main.pressure} мм рт. ст.";
             VlagData.Text = $"Влажность:\n{wd.main.humidity}%";
             WindSData.Text = $"Скорость ветра:\n{(int)wd.wind.speed}м/c";

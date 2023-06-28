@@ -1,0 +1,17 @@
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\bin\Debug\net6.0-windows\Themes1.deps.json
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\bin\Debug\net6.0-windows\Themes1.dll
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\bin\Debug\net6.0-windows\Themes1.pdb
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes1.csproj.AssemblyReference.cache
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes\Day.baml
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes\Morning.baml
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes\Night.baml
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes1_MarkupCompile.cache
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes1.g.resources
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes1.AssemblyInfoInputs.cache
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes1.AssemblyInfo.cs
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes1.csproj.CoreCompileInputs.cache
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes1.dll
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\refint\Themes1.dll
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\Themes1.pdb
+C:\Users\igosh\OneDrive\Рабочий стол\ddd\Themes1\obj\Debug\net6.0-windows\ref\Themes1.dll

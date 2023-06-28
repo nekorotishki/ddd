@@ -43,6 +43,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Themes1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Themes1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Themes1.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
       }
     }
   },
@@ -116,12 +129,18 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "Themes1/1.0.0": {
+      "type": "project",
+      "path": "../Themes1/Themes1.csproj",
+      "msbuildProject": "../Themes1/Themes1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "LiveCharts.Wpf >= 0.9.7",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "Themes1 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -156,7 +175,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\igosh\\OneDrive\\Рабочий стол\\ddd\\Themes1\\Themes1.csproj": {
+              "projectPath": "C:\\Users\\igosh\\OneDrive\\Рабочий стол\\ddd\\Themes1\\Themes1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -7,10 +7,7 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:pgb="https://github.com/Peoky/BusyIndicator"
         mc:Ignorable="d"
-        Title="SecondWindow" Height="850" Width="1500" WindowStyle="SingleBorderWindow" Icon="/Images/Icon.png">
-    <Window.Background>
-        <ImageBrush ImageSource="/Images/MorningEvening.png"/>
-    </Window.Background>
+        Title="SecondWindow" Height="850" Width="1500" WindowStyle="None" Icon="/Images/Icon.png" Style="{DynamicResource WindowStyle}">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="438"></ColumnDefinition>
@@ -27,24 +24,27 @@
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="5*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Border Grid.RowSpan="5" Background="#F8C5B4" Panel.ZIndex="0" Opacity="0.5"></Border>
-        <Button Content="Настройки" Click="Button_Click_1" BorderThickness="0,0,0,3" BorderBrush="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" Background="#00DDDDDD" Margin="33,0,53.5,0"></Button>
-        <Border Grid.Row="1" BorderBrush="#3D95B9" BorderThickness="0,0,0,3" Margin="22,0,11.5,0">
+        <Border Style="{DynamicResource BorderStyle}" Grid.RowSpan="5" Panel.ZIndex="0"></Border>
+        <Button Style="{DynamicResource ButtonStyle}" Content="Настройки" Click="Button_Click_1" BorderThickness="0,0,0,3" BorderBrush="White" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="4" Background="#00DDDDDD" Margin="33,0,53.5,0"></Button>
+        <Border Style="{DynamicResource BorderStyle}" Grid.Row="1" BorderBrush="#3D95B9" BorderThickness="0,0,0,3" Margin="22,0,11.5,0">
             <TextBlock x:Name="SelectedCity" Text="Выбранный город"></TextBlock>
         </Border>
-        <Button Content="Погода" BorderThickness="0,0,0,3" Grid.Row="1" Grid.Column="1" Background="#00DDDDDD" BorderBrush="White" Margin="40.5,0,33,0" Click="Button_Click"></Button>
+        <Button Style="{DynamicResource ButtonStyle}" FontSize="20" x:Name="close" Content="x" Grid.Row="0" Grid.Column="5" Click="close_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" FontSize="20" x:Name="max" Content="0" Grid.Row="0" Grid.Column="4" Click="max_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" FontSize="20" x:Name="min" Content="-" Grid.Row="0" Grid.Column="3" Click="min_Click"/>
+        <Button Style="{DynamicResource ButtonStyle}" Content="Погода" BorderThickness="0,0,0,3" Grid.Row="1" Grid.Column="1" Background="#00DDDDDD" BorderBrush="White" Margin="40.5,0,33,0" Click="Button_Click"></Button>
         <Frame Margin="39" x:Name="fr" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Grid.RowSpan="8" NavigationUIVisibility="Hidden"></Frame>
         <Image x:Name="firstImage" Source="/Images/Sunny.png" Grid.RowSpan="5" Margin="64,126,251,0" Width="123" Height="123" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
         <Image Source="/Images/Sunny.png" Grid.RowSpan="5" Margin="95,341,283,0" Width="60" Height="60" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
         <Image Source="/Images/Cloudy.png" Grid.RowSpan="5" Width="60" Height="60" Margin="95,502,283,0" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
         <Image Source="/Images/Rainy.png" Grid.RowSpan="5" Width="60" Height="60" Margin="95,657,283,0" Panel.ZIndex="1" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
         <Line Grid.RowSpan="5" Y1="187.5" Y2="807.5" Stroke="White" Margin="125,0,312,0"></Line>
-        <TextBlock x:Name="NowData"  Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="5" Margin="194,121,32,0"></TextBlock>
-        <TextBlock Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="5" Margin="167,341,47,0"></TextBlock>
-        <TextBlock Text="Переменная облачность. 20°&#xA;Ощущается как 19°" Margin="167,479,47,0" Grid.RowSpan="5"></TextBlock>
-        <TextBlock Text="Дождь. 19°&#xA;Ощущается как 15°" Grid.RowSpan="5" Margin="167,649,47,0"></TextBlock>
-        <TextBlock Text="16:00" TextAlignment="Right" Grid.RowSpan="5" Margin="11,341,343,0"></TextBlock>
-        <TextBlock Text="17:00" TextAlignment="Right" Grid.RowSpan="5" Margin="11,492,343,0"></TextBlock>
-        <TextBlock Text="18:00" TextAlignment="Right" Grid.RowSpan="5" Margin="11,649,343,0"></TextBlock>
+        <TextBlock Style="{DynamicResource TextBlockStyle}" x:Name="NowData"  Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="5" Margin="194,121,32,0"></TextBlock>
+        <TextBlock Style="{DynamicResource TextBlockStyle}" Text="Ясно. 21°&#xA;Ощущается как 25°" Grid.RowSpan="5" Margin="167,341,47,0"></TextBlock>
+        <TextBlock Style="{DynamicResource TextBlockStyle}" Text="Переменная облачность. 20°&#xA;Ощущается как 19°" Margin="167,479,47,0" Grid.RowSpan="5"></TextBlock>
+        <TextBlock Style="{DynamicResource TextBlockStyle}" Text="Дождь. 19°&#xA;Ощущается как 15°" Grid.RowSpan="5" Margin="167,649,47,0"></TextBlock>
+        <TextBlock Style="{DynamicResource TextBlockStyle}" Text="16:00" TextAlignment="Right" Grid.RowSpan="5" Margin="11,341,343,0"></TextBlock>
+        <TextBlock Style="{DynamicResource TextBlockStyle}" Text="17:00" TextAlignment="Right" Grid.RowSpan="5" Margin="11,492,343,0"></TextBlock>
+        <TextBlock Style="{DynamicResource TextBlockStyle}" Text="18:00" TextAlignment="Right" Grid.RowSpan="5" Margin="11,649,343,0"></TextBlock>
     </Grid>
 </Window>

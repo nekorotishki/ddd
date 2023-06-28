@@ -29,6 +29,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Themes1\Themes1.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Images\Blizzard.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
